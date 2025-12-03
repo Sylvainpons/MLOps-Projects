@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: 
+    branches:
       - main
     paths:
       - '02-github-actions-kdrama-reco/**'
