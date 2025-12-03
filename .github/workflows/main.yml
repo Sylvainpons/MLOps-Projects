@@ -2,12 +2,10 @@ name: CI/CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
-      - '02-github-actions-kdrama-reco/**'
-      - '.github/workflows/kdrama-reco.yml'
-
+      - '02-github-actions-kdrama-reco/**'   # ← uniquement quand ce dossier change
+      - '.github/workflows/main.yml'
 jobs:
   test:
     runs-on: ubuntu-latest
