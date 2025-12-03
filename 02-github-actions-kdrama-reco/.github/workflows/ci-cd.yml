@@ -3,7 +3,9 @@ name: CI/CD
 on:
   push:
     branches: [ main ]
-
+    paths:
+      - '02-github-actions-kdrama-reco/**'   # ← uniquement quand ce dossier change
+      - '.github/workflows/kdrama-reco.yml'
 jobs:
   test:
     runs-on: ubuntu-latest
